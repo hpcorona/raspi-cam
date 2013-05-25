@@ -18,7 +18,5 @@ func main() {
 		log.Printf("NO IMAGE :(")
 	}
 
-	image.Release()
-
 	capture.Release()
 }
