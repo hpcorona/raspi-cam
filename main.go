@@ -12,7 +12,7 @@ func main() {
 
 	image := capture.QueryFrame()
 	if image != nil {
-		SaveImage("test.jpg", image, 0)
+		opencv.SaveImage("test.jpg", image, 0)
 		log.Printf("WE HAVE IMAGE :)")
 	} else {
 		log.Printf("NO IMAGE :(")
