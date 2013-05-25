@@ -19,15 +19,26 @@ func main() {
 	//capture.SetProperty(cv.CV_CAP_PROP_FRAME_HEIGHT, 720)
 	defer capture.Release()
 
-	image := capture.QueryFrame()
-	if image != nil {
-		win.ShowImage(image)
-		//win.Resize(640, 480)
-		cv.WaitKey(0)
+	quit := make(chan bool)
 
-		//cv.SaveImage("test.png", image, 0)
-		log.Printf("WE HAVE IMAGE :)")
-	} else {
-		log.Printf("NO IMAGE :(")
-	}
+	go func() {
+		for {
+			select {
+			case <-quit:
+				return
+			default:
+				image := capture.QueryFrame()
+				if image != nil {
+					win.ShowImage(image)
+					log.Printf("WE HAVE IMAGE :)")
+				} else {
+					log.Printf("NO IMAGE :(")
+				}
+			}
+		}
+	}()
+
+	cv.WaitKey(0)
+
+	quit <- true
 }
