@@ -8,6 +8,9 @@ import (
 func main() {
 	log.Printf("Running!")
 
+	win := cv.NewWindow("Image")
+	defer win.Destroy()
+
 	//capture := cv.NewCaptureFromCAM(cv.CV_CAP_ANY)
 	capture := cv.NewCameraCapture(cv.CV_CAP_ANY)
 	capture.SetProperty(cv.CV_CAP_PROP_FRAME_WIDTH, 320)
@@ -18,8 +21,6 @@ func main() {
 
 	image := capture.QueryFrame()
 	if image != nil {
-		win := cv.NewWindow("Image")
-		defer win.Destroy()
 		win.ShowImage(image)
 		//win.Resize(640, 480)
 		cv.WaitKey(0)
