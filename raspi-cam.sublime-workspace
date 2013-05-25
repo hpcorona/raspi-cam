@@ -1,0 +1,255 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Prefi",
+				"PrefixedName	string ƒ"
+			],
+			[
+				"R",
+				"Run	*rethinkgo.Rows ƒ"
+			],
+			[
+				"session",
+				"sessionValidate	bool ƒ"
+			],
+			[
+				"Write",
+				"WriteHeader	 ƒ"
+			],
+			[
+				"W",
+				"WriteHeader	 ƒ"
+			],
+			[
+				"Handle",
+				"HandleFunc	*mux.Route ƒ"
+			],
+			[
+				"ListenAndS",
+				"ListenAndServeTLS	error ƒ"
+			],
+			[
+				"rout",
+				"routeSetup	*mux.Router ƒ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.go",
+			"settings":
+			{
+				"buffer_size": 58,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/GoSublime/GoSublime.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/hpcorona/Library/Application Support/Sublime Text 2/Packages/GoSublime/USAGE.md",
+		"/Users/hpcorona/Development/tracerly/backend/server/src/config.yaml",
+		"/Users/hpcorona/Development/tracerly/backend/server/server.sh",
+		"/Users/hpcorona/Development/tracerly/backend/server/src/frontend.go",
+		"/Users/hpcorona/Library/Application Support/Sublime Text 2/Packages/GoSublime/9o.md",
+		"/Users/hpcorona/Development/caev/backend/server/src/session.go",
+		"/Users/hpcorona/Development/caev/backend/server/dependencies.sh",
+		"/Users/hpcorona/Development/caev/backend/server/src/main.go",
+		"/Users/hpcorona/Development/caev/backend/server/src/frontend.go",
+		"/Users/hpcorona/Development/caev/backend/server/src/router.go",
+		"/Users/hpcorona/Development/caev/backend/server/src/oauth.go",
+		"/Users/hpcorona/Development/caev/backend/server/src/database.go",
+		"/Users/hpcorona/Library/Application Support/Sublime Text 2/Packages/GoSublime/CHANGELOG.md",
+		"/Users/hpcorona/Development/caev/backend/server/src/config.yaml",
+		"/Users/hpcorona/Development/caev/backend/server/server.sh",
+		"/Users/hpcorona/Development/caev/backend/server/config.yaml",
+		"/Users/hpcorona/Development/caev/backend/server/server.sublime-project"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"type",
+			"\"\n",
+			"yaml",
+			"Fatalf"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.go",
+					"settings":
+					{
+						"buffer_size": 58,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								58
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/GoSublime/GoSublime.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///Users/hpcorona/Development/caev/backend/server":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/hpcorona/Development/caev/backend/server/src":
+	{
+		"height": 340.0
+	},
+	"output.9o:///Users/hpcorona/Development/tracerly/backend/server/src":
+	{
+		"height": 385.0
+	},
+	"output.9o:///Users/hpcorona/Library/Application Support/Sublime Text 2/Packages/GoSublime":
+	{
+		"height": 112.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 112.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"database",
+				"src/database.go"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true
+}

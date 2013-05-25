@@ -1,0 +1,15 @@
+{
+	"settings": {
+        "GoSublime": {
+            "env": {
+                "GOPATH": "$HOME/gocode"
+            }
+        }
+    },
+	"folders":
+	[
+		{
+			"path": "/Users/hpcorona/Development/raspi/raspi-cam"
+		}
+	]
+}
