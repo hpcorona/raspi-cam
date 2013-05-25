@@ -1,6 +1,6 @@
 
 all:
+	go get -u github.com/hpcorona/gopencv
 	git pull
-	go clean
 	go build -o raspi-cam
 	./raspi-cam

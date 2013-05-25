@@ -1,25 +1,25 @@
 package main
 
 import (
-	"code.google.com/p/go-opencv/opencv"
+	cv "github.com/hpcorona/gopencv"
 	"log"
 )
 
 func main() {
 	log.Printf("Running!")
 
-	capture := opencv.NewCameraCapture(opencv.CV_CAP_ANY)
+	capture := cv.NewCaptureFromCAM(cv.CV_CAP_ANY)
 	defer capture.Release()
 
 	image := capture.QueryFrame()
 	if image != nil {
-		win := opencv.NewWindow("Image")
+		win := cv.NewWindow("Image")
 		defer win.Destroy()
 		win.ShowImage(image)
 		//win.Resize(640, 480)
-		opencv.WaitKey(0)
+		cv.WaitKey(0)
 
-		//opencv.SaveImage("test.png", image, 0)
+		//cv.SaveImage("test.png", image, 0)
 		log.Printf("WE HAVE IMAGE :)")
 	} else {
 		log.Printf("NO IMAGE :(")
