@@ -1,6 +1,6 @@
 
 all:
-	git update
+	git pull
 	go clean
 	go build -o raspi-cam
 	./raspi-cam
