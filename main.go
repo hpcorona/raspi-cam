@@ -16,6 +16,9 @@ func main() {
 	capture.SetProperty(cv.CV_CAP_PROP_FRAME_WIDTH, 320)
 	capture.SetProperty(cv.CV_CAP_PROP_FRAME_HEIGHT, 180)
 	fps := int(capture.GetProperty(cv.CV_CAP_PROP_FPS))
+	if fps <= 0 {
+		fps = 33
+	}
 	//capture.SetProperty(cv.CV_CAP_PROP_FRAME_WIDTH, 1280)
 	//capture.SetProperty(cv.CV_CAP_PROP_FRAME_HEIGHT, 720)
 	defer capture.Release()
