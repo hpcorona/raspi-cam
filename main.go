@@ -8,7 +8,7 @@ import (
 func main() {
 	log.Printf("Running!")
 
-	capture := cv.NewCaptureFromCAM(cv.CV_CAP_ANY)
+	capture := cv.NewCaptureFromCAM(-1)
 	defer capture.Release()
 
 	image := capture.QueryFrame()
