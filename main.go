@@ -8,7 +8,8 @@ import (
 func main() {
 	log.Printf("Running!")
 
-	capture := cv.NewCaptureFromCAM(cv.CV_CAP_ANY)
+	//capture := cv.NewCaptureFromCAM(cv.CV_CAP_ANY)
+	capture := cv.NewCameraCapture(cv.CV_CAP_ANY)
 	capture.SetProperty(cv.CV_CAP_PROP_FRAME_WIDTH, 320)
 	capture.SetProperty(cv.CV_CAP_PROP_FRAME_HEIGHT, 180)
 	//capture.SetProperty(cv.CV_CAP_PROP_FRAME_WIDTH, 1280)
