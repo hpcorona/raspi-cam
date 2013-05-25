@@ -8,7 +8,7 @@ import (
 func main() {
 	log.Printf("Running!")
 
-	capture := opencv.NewFileCapture("/dev/video0")
+	capture := opencv.NewCameraCapture(opencv.CV_CAP_ANY)
 
 	image := capture.QueryFrame()
 	if image != nil {
