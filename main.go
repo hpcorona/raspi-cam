@@ -15,6 +15,7 @@ func main() {
 	capture := cv.NewCameraCapture(cv.CV_CAP_ANY)
 	capture.SetProperty(cv.CV_CAP_PROP_FRAME_WIDTH, 320)
 	capture.SetProperty(cv.CV_CAP_PROP_FRAME_HEIGHT, 180)
+	fps := int(capture.GetProperty(opencv.CV_CAP_PROP_FPS))
 	//capture.SetProperty(cv.CV_CAP_PROP_FRAME_WIDTH, 1280)
 	//capture.SetProperty(cv.CV_CAP_PROP_FRAME_HEIGHT, 720)
 	defer capture.Release()
@@ -28,7 +29,7 @@ func main() {
 			log.Printf("NO IMAGE :(")
 		}
 
-		key := cv.WaitKey(33)
+		key := cv.WaitKey(1000 / fps)
 		if key == 27 {
 			break
 		}
