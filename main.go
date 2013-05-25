@@ -12,7 +12,7 @@ func main() {
 
 	image := capture.QueryFrame()
 	if image != nil {
-		opencv.SaveImage("test.pxm", image, opencv.CV_IMWRITE_PXM_BINARY)
+		opencv.SaveImage("test.png", image, 0)
 		log.Printf("WE HAVE IMAGE :)")
 	} else {
 		log.Printf("NO IMAGE :(")
